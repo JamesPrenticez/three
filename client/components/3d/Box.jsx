@@ -17,7 +17,14 @@ export default function Model({ ...props }) {
         <group name="Armature" position={[0, -0.99, 0]}>
           <primitive object={nodes.Bone} />
           <primitive object={nodes.Bone001} />
-          <skinnedMesh name="Cube" geometry={nodes.Cube.geometry} material={materials.Material} skeleton={nodes.Cube.skeleton} />
+          <skinnedMesh
+            castShadow
+            receiveShadow
+            name="Cube"
+            geometry={nodes.Cube.geometry}
+            material={materials.Material}
+            skeleton={nodes.Cube.skeleton}
+          />
         </group>
       </group>
     </group>
