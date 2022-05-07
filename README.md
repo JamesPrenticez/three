@@ -1,12 +1,18 @@
-# Cruise Ships of the World
+# Three Js
 
 ### Getting Started
 ``` npm i ```
 ``` npm run dev ```
-``` npm run db ```
 
-### Database
-- ``` npx knex init ``` 
-- ``` npx knex migrate:make ships ``` 
-- ``` npx knex seed:make 01_ships ```
-- ``` npx knex migrate:latest ```
+### Tutorial
+https://www.youtube.com/watch?v=fdtqqyeKRJk&t=347s
+https://www.youtube.com/watch?v=ClUZKhYLeqc&t=218s
+
+### React Three Fibre
+https://docs.pmnd.rs/react-three-fiber/getting-started/introduction
+
+### GLB files
+https://free3d.com/
+https://sketchfab.com/
+
+npx gltfjsx server/public/3d/box.glb

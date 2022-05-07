@@ -3,10 +3,22 @@
 @tailwind utilities; 
 
 @layer base {
-  .test {
+  * {
       @apply
-      h-64 
-      w-64
-      bg-green-500
+      box-border
+    }
+  
+  html,
+  body,
+  #app {
+    @apply
+    w-full
+    h-full
+  }
+
+  body {
+    @apply
+    bg-[#f1f4f8]
+    fixed
   }
 }
