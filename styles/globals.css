@@ -1,0 +1,12 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities; 
+
+@layer base {
+  .test {
+      @apply
+      h-64 
+      w-64
+      bg-green-500
+  }
+}
