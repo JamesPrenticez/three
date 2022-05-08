@@ -1,4 +1,4 @@
-import React, {Suspense} from 'react'
+import React, {useState, Suspense} from 'react'
 
 import { Canvas } from "react-three-fiber"
 import { softShadows } from '@react-three/drei'
@@ -11,10 +11,12 @@ import Lights from './3d/Lights'
 softShadows()
 
 export default function App() {
+  const [open, setOpen] = useState(false)
+
 
   return (
-  <div className='h-screen w-full flex items-center justify-center'>
-    <div className='bg-gradient-to-r from-indigo-500 via-purple-500 to-pink-500 h-1/2 w-1/2'>
+  <div className='h-screen w-full flex items-center justify-center bg-gradient-to-r from-indigo-500 via-purple-500 to-pink-500'>
+    <div className='h-1/2 w-1/2'>
       <Canvas
         colorManagement
         shadows //updated from shadowmap
@@ -22,7 +24,7 @@ export default function App() {
         >
         <Lights />
         <Suspense fallback={null}>
-          <Box />
+          <Box open={open} setOpen={setOpen} />
           {/* <Car /> */}
           <Floor />
         </Suspense> 
